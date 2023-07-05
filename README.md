@@ -201,6 +201,28 @@ Retrieves products with prices greater than 3000.
 - URL: `/products/p3000`
 - Method: `GET`
 
+---
+
+## Function Descriptions
+
+#### isEmailExist Middleware
+
+Checks if an email already exists in the database before adding a new user. It ensures that no duplicate emails are registered.
+
+#### isIdExist Middleware
+
+Checks if a user with a given ID exists in the database before updating or deleting a user. It prevents updating or deleting non-existent users.
+
+#### isProductExist Middleware
+
+Checks if a product with a given name and user ID already exists in the database before adding a new product. It ensures that no duplicate products are added for the same user.
+
+#### isProductIdExist Middleware
+
+Checks if a product with a given ID and user ID exists in the database before updating or deleting a product. It prevents updating or deleting non-existent products or unauthorized access to products.
+
+---
+
 ## Author
 
 - GitHub - [IMostafaR](https://github.com/IMostafaR)
